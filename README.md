@@ -4,7 +4,7 @@
 
 This project demonstrates ADC data acquisition using DMA on an STM32 Nucleo-F446RE development board.
 
-When the user presses the B1 button (connected to PC13), the microcontroller reads the internal temperature sensor and displays the temperature on a PC terminal via UART.
+The microcontroller reads the internal temperature sensor. When the user presses the B1 button(connected to PC13), the measured temperature is displayed on a PC terminal via UART.
 
 ## Hardware
 
@@ -24,7 +24,6 @@ When the user presses the B1 button (connected to PC13), the microcontroller rea
 - DMA-based ADC data transfer
 - GPIO interrupt handling for the B1 user button (PC13)
 - UART communication between the STM32 microcontroller and a PC terminal
-- Temperature measurement triggered by a button press
 
 ## Project Structure
 
