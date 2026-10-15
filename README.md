@@ -1,20 +1,34 @@
 # ADC_DMA_Mode_STM32
-##Overview 
-This project demonstrates embedded C development on an STM32 Nucleo-F446RE development board.
-When user press buttion B1(PC13) the temperature will display on the screen.
-##Hardware
-STM32 Nucleo-F446RE development board
-USB connection to PC
-##Software and Tools
-STM32CubeIDE
-STM32CubeMX
-STM32 HAL
-C programming language
-##Features
-UART communication between STM32 and a PC
-ADC uses DMA to trasfer data
-##Project Structure
-Core/Inc/ — application header files
-Core/Src/ — application source files
-Drivers/ — STM32 HAL and CMSIS dependencies
-.ioc — STM32CubeMX configuration
+
+## Overview
+
+This project demonstrates ADC data acquisition using DMA on an STM32 Nucleo-F446RE development board.
+
+When the user presses the B1 button (connected to PC13), the microcontroller reads the internal temperature sensor and displays the temperature on a PC terminal via UART.
+
+## Hardware
+
+- STM32 Nucleo-F446RE development board
+- USB connection to PC
+
+## Software and Tools
+
+- STM32CubeIDE
+- STM32CubeMX
+- STM32 HAL
+- C programming language
+
+## Features
+
+- ADC configuration for internal temperature sensor measurement
+- DMA-based ADC data transfer
+- GPIO interrupt handling for the B1 user button (PC13)
+- UART communication between the STM32 microcontroller and a PC terminal
+- Temperature measurement triggered by a button press
+
+## Project Structure
+
+- `Core/Inc/` — application header files
+- `Core/Src/` — application source files
+- `Drivers/` — STM32 HAL and CMSIS dependencies
+- `.ioc` — STM32CubeMX configuration file
